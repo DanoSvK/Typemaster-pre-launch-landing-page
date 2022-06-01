@@ -1,0 +1,155 @@
+// Colours
+
+$color-button: #F16718;
+$color-hover: #FF9B62;
+
+$color-heading: #162542;
+$color-text: #7B8BAD;
+
+$color-pre-order: #E8EFF2;
+
+// Typography
+
+h1 {
+    line-height: 3.5rem;
+    letter-spacing: 0;
+    color: $color-heading;
+    text-transform: uppercase;
+    font: {
+        weight: 900;
+        size: 3.5rem;
+    }
+}
+h2, h3 {
+    line-height: 1.625rem;
+    letter-spacing: 0;
+    color: $color-heading;
+    text-transform: uppercase;
+    font: {
+        weight: 900;
+        size: 1rem
+    }
+}
+p, a {
+    line-height: 1.625rem;
+    letter-spacing: 0;
+    color: $color-text;
+    text-transform: uppercase;
+    font: {
+        weight: 500;
+        size: 1rem
+    }
+}
+
+// Mobile view
+
+body {
+    font: {
+        family: 'Barlow', sans-serif;
+        size: 1rem
+    }
+    margin: 0;
+    padding: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    .pre-order {
+        color: $color-heading;
+        font-weight: 900;
+        padding: .6875rem .875rem;
+        text-decoration: none;
+        background-color: $color-pre-order;
+        border-radius: 8px;
+    }
+
+    img {
+        border-radius: 0;
+    } 
+}
+
+.push-down {
+    margin-top: 1.45rem;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-pre-order {
+    background-color: $color-button;
+    padding: .6875rem .875rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.keyboard {
+    padding-bottom: 4rem;
+}
+
+.image-1 {
+    transform: translate(40px);
+}
+
+
+.image-2 {
+   padding-right: 1.5rem;
+   
+}
+
+
+
+.images {
+    display: flex;
+    margin-top: 1.5rem;
+    transform: translateX(-45px);
+
+}
+
+.ok {
+    background-color: #F16718;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+section div:nth-child(1) {
+    background-color: #F16718;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+article {
+    text-align: center;
+}
+
+footer {
+    margin-top: 5.5rem;
+    text-align: center;
+}
