@@ -65,13 +65,17 @@ header {
   border-radius: 8px; }
 
 .keyboard {
-  padding-bottom: 4rem; }
+  text-align: center; }
 
 .image-1 {
-  transform: translate(40px); }
+  transform: translate(40px);
+  height: auto; }
 
 .image-2 {
   padding-right: 1.5rem; }
+
+.header-text {
+  padding-bottom: 2rem; }
 
 .images {
   display: flex;
@@ -86,16 +90,17 @@ header {
   margin-bottom: 4rem;
   margin-top: 4rem; }
 
-section div:nth-child(1) {
+.advantages section div:nth-child(1) {
   background-color: #F16718;
   width: 65px;
   height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; }
+  margin: auto;
+  border-radius: 1rem; }
 
-section {
+.advantages section {
   margin-bottom: 4rem; }
 
 article {
@@ -104,5 +109,43 @@ article {
 footer {
   margin-top: 5.5rem;
   text-align: center; }
+
+@media (min-width: 48rem) {
+  body {
+    padding: 2.4375rem; }
+
+  .keyboard {
+    display: flex;
+    justify-content: space-between; }
+
+  .hero {
+    text-align: left;
+    border-right: #F16718; }
+
+  .images {
+    transform: translateX(0); }
+
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem; }
+    .advantages article {
+      max-width: 20rem;
+      text-align: left; }
+    .advantages section div:nth-child(1) {
+      margin: 0; }
+
+  .description {
+    text-align: left;
+    display: flex;
+    gap: 6.25rem; }
+    .description h2 {
+      font-size: 2rem; }
+    .description p {
+      width: auto;
+      max-width: 43rem; } }
+@media (min-width: 59.375rem) {
+  .advantages {
+    justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */
