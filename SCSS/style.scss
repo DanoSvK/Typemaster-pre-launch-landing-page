@@ -46,13 +46,14 @@ p, a {
 body {
     font: {
         family: 'Barlow', sans-serif;
-        size: 1rem
+        size: 1rem;
+        max-width: 93.75rem
     }
     margin: 0;
     padding: 1.5rem;
 }
 
-* {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
@@ -86,7 +87,7 @@ header {
 
 .header-text {
     display: flex;
-    justify-content: space-between;
+    gap: 3.125rem
 }
 
 .second-pre-order {
@@ -107,6 +108,13 @@ header {
     height: auto;
 }
 
+.square {
+    display: none;
+}
+
+.square2 {
+    display: none;
+}
 
 .image-2 {
    padding-right: 1.5rem;
@@ -130,6 +138,7 @@ header {
     text-align: center;
     margin-bottom: 4rem;
     margin-top: 4rem;
+    display: block;
 }
 
 .advantages {
@@ -167,6 +176,7 @@ footer {
     }
     .keyboard {
         display: flex;
+        gap: 100px;
         justify-content: space-between;
     }
     .hero {
@@ -180,8 +190,9 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 1.25rem;
+        justify-content: center;
         & article {
-            max-width: 20rem;
+            max-width: 17.5625rem;
             text-align: left;
         }
         & section div:nth-child(1) {
@@ -202,9 +213,35 @@ footer {
     }
 }
 
-@media (min-width: 59.375rem) {
+@media (min-width: 1410px) {
+    body {
+        padding-left: 10.3125rem;
+        padding-right: 10.3125rem;
+    }
+
+    .image-1 {
+        transform: translateX(0);
+    }
+
     .advantages {
-        justify-content: center;
-        
+        & article {
+            max-width: 15.9375rem;
+            text-align: left;
+        }
+    }
+
+    .square {
+        position: absolute;
+        display: inline;
+        right: 0;
+        transform: translateX(127.5px);
+    }
+
+    .square2 {
+        position: absolute;
+        display: inline;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-296.5px);
     }
 }
