@@ -12,15 +12,20 @@ h2, h3 {
   color: #162542;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 1rem; }
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
 
 p, a {
   line-height: 1.625rem;
   letter-spacing: 0;
   color: #7B8BAD;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem; }
+
+a {
+  text-transform: uppercase; }
 
 body {
   font-family: 'Barlow', sans-serif;
@@ -56,9 +61,10 @@ header {
 .push-down {
   margin-top: 1.45rem; }
 
-.header-text {
+.buttons {
   display: flex;
-  gap: 3.125rem; }
+  justify-content: space-between;
+  padding-bottom: 4rem; }
 
 .second-pre-order {
   background-color: #F16718;
@@ -66,7 +72,8 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  border-radius: 8px; }
+  border-radius: .5rem;
+  flex: 0 0 auto; }
   .second-pre-order:hover {
     background-color: #FF9B62; }
 
@@ -98,11 +105,14 @@ header {
   background-color: #F16718; }
 
 .description {
+  flex-basis: 100%;
   text-align: center;
   margin-bottom: 4rem;
   margin-top: 4rem;
-  display: block;
-  width: 100%; }
+  display: block; }
+
+.description-hidden {
+  display: none; }
 
 .advantages section div:nth-child(1) {
   background-color: #F16718;
@@ -137,6 +147,10 @@ footer {
     text-align: left;
     border-right: #F16718; }
 
+  .image-1 {
+    min-width: 28.125rem;
+    min-height: 25rem; }
+
   .images {
     transform: translateX(0); }
 
@@ -151,6 +165,9 @@ footer {
     .advantages section div:nth-child(1) {
       margin: 0; }
 
+  .description-hidden {
+    display: none; }
+
   .description {
     text-align: left;
     display: flex;
@@ -160,7 +177,7 @@ footer {
     .description p {
       width: auto;
       max-width: 43rem; } }
-@media (min-width: 1410px) {
+@media (min-width: 88.125rem) {
   body {
     padding-left: 10.3125rem;
     padding-right: 10.3125rem;
@@ -186,17 +203,22 @@ footer {
     left: 0;
     transform: translateX(-296.5px); }
 
-  .description {
+  .description-hidden {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: left;
     gap: 10px;
     padding-left: 7.8125rem;
-    max-width: 27rem; }
-    .description h2 {
-      line-height: 36px; }
+    max-width: 23.75rem; }
+    .description-hidden h2 {
+      line-height: 36px;
+      font-size: 2rem; }
+    .description-hidden p {
+      margin: 0; }
+
+  .description {
+    display: none; }
 
   .advantages {
     padding-top: 10rem; } }

@@ -27,18 +27,25 @@ h2, h3 {
     text-transform: uppercase;
     font: {
         weight: 900;
-        size: 1rem
+        size: 2rem
     }
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 p, a {
     line-height: 1.625rem;
     letter-spacing: 0;
     color: $color-text;
-    text-transform: uppercase;
     font: {
         weight: 500;
         size: 1rem
     }
+}
+
+a {
+    text-transform: uppercase;
 }
 
 // Mobile view
@@ -74,7 +81,6 @@ header {
         text-decoration: none;
         background-color: $color-pre-order;
         border-radius: 8px;
-
         &:hover {
             background-color: #162542;
             color: #FFF;
@@ -90,9 +96,10 @@ header {
     margin-top: 1.45rem;
 }
 
-.header-text {
+.buttons {
     display: flex;
-    gap: 3.125rem
+    justify-content: space-between;
+    padding-bottom: 4rem;
 }
 
 .second-pre-order {
@@ -101,8 +108,8 @@ header {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    border-radius: 8px;
-
+    border-radius: .5rem;
+    flex: 0 0 auto;
     &:hover {
         background-color: #FF9B62;
     }
@@ -144,11 +151,15 @@ header {
 }
 
 .description {
+    flex-basis: 100%;
     text-align: center;
     margin-bottom: 4rem;
     margin-top: 4rem;
     display: block;
-    width: 100%;
+}
+
+.description-hidden {
+    display: none;
 }
 
 .advantages {
@@ -179,6 +190,7 @@ footer {
     text-align: center;
 }
 
+// Tablet view
 
 @media (min-width: 48rem) {
     body {
@@ -193,6 +205,12 @@ footer {
         text-align: left;
         border-right: #F16718;
     }
+
+    .image-1 {
+        min-width: 28.125rem;
+        min-height: 25rem;
+    }
+
     .images {
         transform: translateX(0);
     }
@@ -209,6 +227,11 @@ footer {
             margin: 0;
         }
     }
+
+    .description-hidden {
+        display: none;
+    }
+
     .description {
         text-align: left;
         display: flex;
@@ -223,7 +246,9 @@ footer {
     }
 }
 
-@media (min-width: 1410px) {
+// Desktop view
+
+@media (min-width: 88.125rem) {
     body {
         padding-left: 10.3125rem;
         padding-right: 10.3125rem;
@@ -256,18 +281,25 @@ footer {
         transform: translateX(-296.5px);
     }
 
-    .description {
+    .description-hidden {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         text-align: left;
         gap: 10px;
         padding-left: 7.8125rem;
-        max-width: 27rem;
+        max-width: 23.75rem;
         & h2 {
             line-height: 36px;
+            font-size: 2rem;
         }
+        & p {
+            margin: 0;
+        }
+    }
+
+    .description {
+        display: none;
     }
 
     .advantages {
