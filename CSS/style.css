@@ -32,7 +32,8 @@ body {
   font-size: 1rem;
   font-max-width: 93.75rem;
   margin: 0;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  overflow-x: hidden; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -134,7 +135,7 @@ footer {
   margin-top: 5.5rem;
   text-align: center; }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   body {
     padding: 2.4375rem; }
 
@@ -177,7 +178,7 @@ footer {
     .description p {
       width: auto;
       max-width: 43rem; } }
-@media (min-width: 88.125rem) {
+@media (min-width: 1410px) {
   body {
     padding-left: 10.3125rem;
     padding-right: 10.3125rem;

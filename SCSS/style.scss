@@ -58,6 +58,7 @@ body {
     }
     margin: 0;
     padding: 1.5rem;
+    overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -192,9 +193,10 @@ footer {
 
 // Tablet view
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
     body {
         padding: 2.4375rem;
+        overflow-x: hidden;
     }
     .keyboard {
         display: flex;
@@ -248,7 +250,7 @@ footer {
 
 // Desktop view
 
-@media (min-width: 88.125rem) {
+@media (min-width: 1410px) {
     body {
         padding-left: 10.3125rem;
         padding-right: 10.3125rem;
